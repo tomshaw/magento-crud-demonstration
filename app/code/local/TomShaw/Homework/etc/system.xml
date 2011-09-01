@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <basesettings translate="label" module="homework">
+            <label>Tom Shaw Extensions</label>
+            <sort_order>300</sort_order>
+        </basesettings>
+    </tabs>
+    <sections>
+         <basesettings translate="label" module="homework">
+            <label>Default Settings</label>
+            <tab>basesettings</tab>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <settings translate="label">
+                    <label>Base Module Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>200</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <name translate="label">
+                            <label>Demo Input</label>
+                        </name>
+                        <demo_input translate="label comment">
+                            <label>Demo Input</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[<a href="http://www.magentocommerce.com/">Click here</a> to download the latest version of Magento!]]></comment>
+                        </demo_input>
+                    </fields>
+                </settings>
+            </groups>
+        </basesettings>
+    </sections>
+</config>

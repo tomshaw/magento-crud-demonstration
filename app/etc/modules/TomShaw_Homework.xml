@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+    	<TomShaw_Homework>
+    		<active>true</active>
+          	<codePool>local</codePool>
+    	</TomShaw_Homework>
+  </modules>
+</config>

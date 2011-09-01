@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <translate>
+        <modules>
+            <TomShaw_Homework>
+                <files>
+                    <default>TomShaw_Homework.csv</default>
+                </files>
+            </TomShaw_Homework>
+        </modules>
+    </translate>
+    <menu>
+        <homework translate="title" module="homework">
+            <title><![CDATA[<span class="tomshaw-admin_menu">Tom Shaw</span>]]></title>
+            <sort_order>1000</sort_order>
+            <action>homework/adminhtml_assignment/index</action>
+			<children>
+				<listing module="homework">
+					<title>Homework Listings</title>
+					<sort_order>1</sort_order>
+					<action>homework/adminhtml_assignment/index</action>
+				</listing>
+			</children>
+		</homework>
+	</menu>
+    <layout>
+        <updates>
+            <homework module="homework">
+                <file>tomshaw_homework.xml</file>
+            </homework>
+        </updates>
+    </layout>
+</config>
