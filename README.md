@@ -10,7 +10,11 @@ This module allows you to assign customers as students via the Magento administr
 
 Installation of the module is quite simple.
 
-	Unzip the downloaded file into your root directory. Homework does require Magento >= 1.5.
+	Unzip the downloaded file into your root directory. 
+	
+## Requirements
+
+ - Homework does require Magento >= 1.5.
 
 ## Documentation
 
