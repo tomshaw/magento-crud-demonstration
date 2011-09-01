@@ -31,4 +31,12 @@ class TomShaw_Homework_Model_Mysql4_Student extends Mage_Core_Model_Mysql4_Abstr
         $this->_getWriteAdapter()->delete($this->getMainTable(), $condition);
         return $this;
     }
+    
+    public function grade($grade, $homeworkId, $studentId)
+    {	
+        $condition = $this->_getWriteAdapter()->quoteInto('homework_id = ?', $homeworkId);
+        $condition .= ' AND ' . $this->_getWriteAdapter()->quoteInto('customer_id = ?', $studentId);
+		$this->_getWriteAdapter()->update($this->getMainTable(), array('grade' => $grade), $condition);
+        return $this;
+    }
 }

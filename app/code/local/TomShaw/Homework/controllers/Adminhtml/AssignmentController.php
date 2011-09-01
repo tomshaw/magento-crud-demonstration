@@ -97,14 +97,14 @@ class TomShaw_Homework_Adminhtml_AssignmentController extends Mage_Adminhtml_Con
                 }
                 
                 array_shift($grades);
+                
 				foreach($studentIds as $_index => $value) {
-                	if(in_array($value, $this->_hasAssignment())) {
-                		if(isset($grades[$_index])) {
-                			$studentGrade = $grades[$_index];            			
-                			$student = Mage::getModel('homework/student')->load(null, $value, 'customer_id');
-                    		$student->setGrade($studentGrade);
-                    		$student->save();
-                		}
+                	if(!in_array($value, $this->_hasAssignment())) {
+                		continue;	
+                	}
+                	if(isset($grades[$_index])) {           			
+                		$student = Mage::getResourceModel('homework/student');
+                    	$student->grade((int)$grades[$_index], $id, $value);
                 	}
                 }
                 
