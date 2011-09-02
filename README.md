@@ -4,7 +4,7 @@ Have you ever needed to assign your customers as students and give them homework
 
 ## Functionality
 
-This module allows you to assign customers as students via the Magento administration customer edit or create tabs. Once a customer is assigned as a student you can begin to assign homework assignments to them. Homework assignments are created using a wysiwyg editor. You have the option to assign statuses, stores, priorities and due dates to your homework assignments. Once an assignment is completed you can grade your student customers for their efforts. 
+This module allows you to assign customers as students via the Magento administration customer edit or create tabs. Once a customer is assigned as a student you can begin to assign homework assignments to them. Homework assignments are created using a wysiwyg editor. You have the option to assign statuses, stores, priorities and due dates to your homework assignments. Once an assignment is completed you can grade your student customers for their efforts. Grading takes place in the edit assignment grades tab. In the Magneto Grid on the far right you'll find an input that accepts numerical values. Here you enter a number between one and 100 that represents the grade the student made. When you are done hit the save or save and continue edit button to update your changes.
 
 ## Installation Notes 
 
